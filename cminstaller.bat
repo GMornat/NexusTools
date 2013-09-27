@@ -29,3 +29,6 @@ echo If you get out ADB sideload mode after a first flash success , restart it
 echo and continue
 pause
 adb sideload gapps.zip
+echo COOL ! Now CyanogenMod is installed :)
+echo Reboot your device with commands in the recovery mode you are :)
+echo WELCOME TO CYANOGENMOD !
