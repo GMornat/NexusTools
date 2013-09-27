@@ -8,15 +8,15 @@ What are the requirements of this project ?
 
 -A Nexus device
 
--A Windows PC computer
+-A Windows PC computer [ Linux/Mac in work :) ]
 
 -Android tools for Nexus witch could be installed with the Android SDK or here : http://bit.ly/toolsandroid They are non-open-source and distributed by Google Inc
 
--ClockworkMod recovery , non-open-source too , distributed by Koushik Dutta Download for your Nexus device here : http://clockworkmod.com/rommanager
+-A custom recovery (like CWM at http://clockworkmod.com/rommanager)
 
 -CyanogenMod , as a .zip file . Download it for your device here http://get.cm/
 
--Google Apps , as another .zip file . Download them at http://goo.im/gapps
+-Google Apps (optional) , as another .zip file . Download them at http://goo.im/gapps
  Select the right version corresponding to your CM version !
 
 Instructions for building
