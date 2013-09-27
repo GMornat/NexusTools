@@ -1,7 +1,7 @@
 @echo off
 cls
 echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
-echo °                               cminstaller                              ]
+echo °                               cminstaller                             A�
 echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
 echo Are you sure to flash CyanogenMod ?
 pause
@@ -19,6 +19,11 @@ echo If the last line of this mode is "Lock State : Unlocked" , you can skip
 pause
 fastboot reboot
 echo For safety , we will reboot
+fastboot reboot
+echo Waiting to activate USB debuging another time and continue
+pause
+adb reboot bootloader
+echo When you're on Fastboot Mode , continue the script
 fastboot flash recovery recovery.img
 echo If the flash is success , then you can boot in recovery with Volume keys
 echo and select it with POWER button , when you are in your favorite recovery ,
