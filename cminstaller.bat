@@ -1,8 +1,8 @@
 @echo off
 cls
-echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
-echo °                               cminstaller                               °
-echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
+echo °                               cminstaller                              ]
+echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
 echo Are you sure to flash CyanogenMod ?
 pause
 echo Turn on your device and activate USB debuging in Developers Options
@@ -17,12 +17,15 @@ pause
 echo Your phone will reboot in Fastboot Mode . Look at the last line
 echo If the last line of this mode is "Lock State : Unlocked" , you can skip
 pause
+fastboot reboot
+echo For safety , we will reboot
 fastboot flash recovery recovery.img
 echo If the flash is success , then you can boot in recovery with Volume keys
 echo and select it with POWER button , when you are in your favorite recovery ,
 echo continue the script .
 pause
-echo Start the ADB sideload mode :) , then continue !
+echo With your recovery , wipe Data , Cache and Dalvik and then ,
+echo start the ADB sideload mode :) and continue !
 pause
 adb sideload cm.zip
 echo If you get out ADB sideload mode after a first flash success , restart it
