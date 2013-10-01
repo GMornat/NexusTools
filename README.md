@@ -18,7 +18,7 @@
 </ul>
 <li>A custom recovery (like <a target="_blank" href="http://clockworkmod.com/rommanager">CWM</a>)</li>
 <li><a target="_blank" href="http://get.cm/">Download CyanogenMod</a></li>
-<li><a target="_blank" href="http://goo.im/gapps">Download Google Apps</a></li>
+<li>(Optional) <a target="_blank" href="http://goo.im/gapps">Download Google Apps</a></li>
 <ul>
 <li><b>Select the right version corresponding to your CM version!</b></li>
 <li><b>Do not extract these .zip files!</b></li>
