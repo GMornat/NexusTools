@@ -1,15 +1,15 @@
 @echo off
 cls
-echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
-echo °                               cminstaller                             A�
-echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
+echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
+echo °                               cminstaller                             A�
+echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
 echo Are you sure to flash CyanogenMod ?
 pause
 echo IS YOUR BOOTLOADER UNLOCKED ?
 echo 1-- YES
 echo 2-- NO
 set /p choix=Que voulez vous faire ?
-if "%choix%"=="1" goto :driverstest
+if "%choix%"=="1" goto :yes
 if "%choix%"=="2" goto :no
 :no
 echo Turn on your device and activate USB debuging in Developers Options
