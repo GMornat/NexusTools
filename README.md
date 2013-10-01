@@ -1,4 +1,4 @@
-CyanogenMod installer for Windows
+CyanogenMod installer for Windows and Linux
 
 What is this project ?
 
@@ -19,10 +19,10 @@ What are the requirements of this project ?
 -Google Apps (optional) , as another .zip file . Download them at http://goo.im/gapps
  Select the right version corresponding to your CM version !
 
-Instructions for building
+Instructions:
 
-1) Download all required files and your version of rootfornexus 
-2) Place all files in a single folder 
+1) Download all required files and your version of rootfornexus
+2) Place all files in a single folder
 3) Rename your recovery file as recovery.img , CyanogenMod .zip file as cm.zip and Google Apps zip as gapps.zip
 4) Launch rootfornexus
 5) Follow the instructions on screen
