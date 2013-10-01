@@ -2,13 +2,13 @@ CyanogenMod installer for Windows
 
 What is this project ?
 
-cminstaller is a open-source project for installing CM on your Android system . It'is a batch powered software
+cminstaller is a open-source project for installing CM on your Android device. It's a simple batch/shell script.
 
 What are the requirements of this project ?
 
 -A Nexus device
 
--A Windows PC computer [ Linux/Mac in work :) ]
+-A PC with either Linux (tested with Ubuntu 12.04 LTS) or Windows OS (Linux version under development)
 
 -Android tools for Nexus witch could be installed with the Android SDK or here : http://bit.ly/toolsandroid They are non-open-source and distributed by Google Inc
 
@@ -24,5 +24,6 @@ Instructions for building
 1) Download all required files and your version of rootfornexus 
 2) Place all files in a single folder 
 3) Rename your recovery file as recovery.img , CyanogenMod .zip file as cm.zip and Google Apps zip as gapps.zip
-4) Launch rootfornexus 
-5) Enjoy :)
+4) Launch rootfornexus
+5) Follow the instructions on screen
+6) Enjoy :)
