@@ -29,7 +29,6 @@ if "%choix%"=="1" goto :fastboot
 if "%choix%"=="2" goto :unlock
 
 :unlock
->>>>>>> 9489a24611a3e2676c0b09250f4fad9661378b40
 echo Turn on your device and activate USB debuging in Developers Options
 pause
 adb devices
