@@ -1,6 +1,6 @@
 <h3>CyanogenMod installer for Windows and Linux</h3>
 <h4>What is this project?</h4>
-<p>Cminstaller is a simple script for installing CM on your Android device.</p>
+<p>Cminstaller is a simple script for installing CyanogenMod or almost any other custom ROM on your Android device.</p>
 <h4>What are the requirements of this project?</h4>
 <ul>
 <li>A Nexus device</li>
@@ -20,9 +20,9 @@
 <li><a target="_blank" href="http://get.cm/">Download CyanogenMod</a></li>
 <li>(Optional) <a target="_blank" href="http://goo.im/gapps">Download Google Apps</a></li>
 <ul>
-<li><b>Select the right version corresponding to your CM version!</b></li>
+<li><b>Select the right version corresponding to your CyanogenMod version!</b></li>
 <li><b>Do not extract these .zip files!</b></li>
-<li>All custom ROMs don't need Gapps since they are already included in the ROM .zip file.</li>
+<li>All custom ROMs don't need Google Apps since they are already included in the ROM.</li>
 </ul>
 </ul>
 <h4>Instructions:</h4>
