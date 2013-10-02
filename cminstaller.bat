@@ -3,7 +3,6 @@ cls
 echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
 echo °                               cminstaller                             A�
 echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
-<<<<<<< HEAD
 echo Are you sure to flash CyanogenMod ?
 pause
 echo IS YOUR BOOTLOADER UNLOCKED ?
