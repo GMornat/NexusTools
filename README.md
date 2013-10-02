@@ -10,8 +10,8 @@
 <li>Fastboot</li>
 <li>ADB</li>
 <li>Drivers for Windows</li>
-<li><a target="_blank" href="http://bit.ly/toolsandroid">Download ADB, fastboot and drivers for windows</a></li>
-<li><a target="_blank" href="http://developer.android.com/sdk/index.html#download">Download ADT Bundle for all platforms</a></li>
+<li><a target="_blank" href="http://bit.ly/toolsandroid">Download ADB & fastboot  for Windows only</a></li>
+<li><a target="_blank" href="http://developer.android.com/sdk/index.html#download">or download ADT Bundle for Windows/Linux/Mac</a></li>
 <ul>
 <li>Extract ADB and fastboot (and drivers for Windows) from platform tools directory.</li>
 </ul>
@@ -29,7 +29,7 @@
 <ol>
 <li>Download all required files and your version of rootfornexus</li>
 <li>Place all files in a single folder</li>
-<li>Rename your recovery image as recovery.img, CyanogenMod (or any other rom) .zip file as cm.zip and Google Apps .zip file as gapps.zip (In Windows you may not need to put .zip or .img in the file name)</li>
+<li>Rename your recovery image as recovery.img, CyanogenMod (or any other rom) .zip file as cm.zip and Google Apps .zip file as gapps.zip (in Windows you may not need to put .zip or .img in the file name)</li>
 <li>Launch the script</li>
 <li>Follow the instructions on screen</li>
 <li>Enjoy your new shiny ROM :)</li>
