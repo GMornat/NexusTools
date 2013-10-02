@@ -1,29 +1,19 @@
 @echo off
 cls
-echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
-echo °                               cminstaller                             A�
-echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
-echo Are you sure to flash CyanogenMod ?
-pause
-echo IS YOUR BOOTLOADER UNLOCKED ?
-echo 1-- YES
-echo 2-- NO
-set /p choix=What do you want to do ?
-if "%choix%"=="1" goto :yes
-if "%choix%"=="2" goto :no
-:no
-=======
-echo 
+echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
+echo °                               cminstaller                             A�
+echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
 echo NOTE: Use this script at your own risk!
-echo NOTE: We are not responsible for dead kittens, any injuries or broken devices!
-echo NOTE: Use this script only for nexus devices. Other devices may not work or in worst case brick!
+echo We are not responsible for dead kittens, any injuries or broken devices!
+echo Use this script only for Nexus devices. Other devices may not work or
+echo in worst case brick!
 echo
 echo Are you sure to flash CyanogenMod?
 pause
 echo IS YOUR BOOTLOADER UNLOCKED?
 echo 1 -- YES
 echo 2 -- NO
-set /p choix=What do you want to do ?
+set /p choix=Que voulez vous faire?
 if "%choix%"=="1" goto :fastboot
 if "%choix%"=="2" goto :unlock
 
@@ -61,7 +51,7 @@ goto :recovery
 echo Have you flashed a custom recovery (Select NO if unsure)?
 echo 1 -- YES
 echo 2 -- NO
-set /p choix=What do you want to do ?
+set /p choix=Que voulez vous faire?
 if "%choix%"=="1" goto :flash
 if "%choix%"=="2" goto :flashrecovery
 
@@ -85,7 +75,7 @@ adb sideload cm.zip
 echo Do you want to flash Google Apps?
 echo 1 -- YES
 echo 2 -- NO
-set /p choix=What do you want to do ?
+set /p choix=Que voulez vous faire?
 if "%choix%"=="1" goto :flashgapps
 if "%choix%"=="2" goto :finish
 
