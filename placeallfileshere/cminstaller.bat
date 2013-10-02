@@ -1,8 +1,8 @@
 @echo off
 cls
-echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
-echo °                               cminstaller                             A�
-echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
+echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
+echo °                               cminstaller                             A�
+echo °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°�
 echo NOTE: Use this script at your own risk!
 echo We are not responsible for dead kittens, any injuries or broken devices!
 echo Use this script only for Nexus devices. Other devices may not work or
