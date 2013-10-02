@@ -9,7 +9,7 @@ pause
 echo IS YOUR BOOTLOADER UNLOCKED ?
 echo 1-- YES
 echo 2-- NO
-set /p choix=Que voulez vous faire ?
+set /p choix=What do you want to do ?
 if "%choix%"=="1" goto :yes
 if "%choix%"=="2" goto :no
 :no
@@ -24,7 +24,7 @@ pause
 echo IS YOUR BOOTLOADER UNLOCKED?
 echo 1 -- YES
 echo 2 -- NO
-set /p choix=Que voulez vous faire?
+set /p choix=What do you want to do ?
 if "%choix%"=="1" goto :fastboot
 if "%choix%"=="2" goto :unlock
 
@@ -62,7 +62,7 @@ goto :recovery
 echo Have you flashed a custom recovery (Select NO if unsure)?
 echo 1 -- YES
 echo 2 -- NO
-set /p choix=Que voulez vous faire?
+set /p choix=What do you want to do ?
 if "%choix%"=="1" goto :flash
 if "%choix%"=="2" goto :flashrecovery
 
@@ -86,7 +86,7 @@ adb sideload cm.zip
 echo Do you want to flash Google Apps?
 echo 1 -- YES
 echo 2 -- NO
-set /p choix=Que voulez vous faire?
+set /p choix=What do you want to do ?
 if "%choix%"=="1" goto :flashgapps
 if "%choix%"=="2" goto :finish
 
