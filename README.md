@@ -27,7 +27,7 @@
 </ul>
 <h4>Instructions:</h4>
 <ol>
-<li>Download all required files and your version of rootfornexus</li>
+<li>Download all required files and source code of cminstaller</li>
 <li>Place all files in a single folder</li>
 <li>Rename your recovery image as recovery.img, CyanogenMod (or any other rom) .zip file as cm.zip and Google Apps .zip file as gapps.zip (in Windows you may not need to put .zip or .img in the file name)</li>
 <li>Launch the script</li>
