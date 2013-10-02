@@ -1,5 +1,5 @@
 <h3>CyanogenMod installer for Windows and Linux</h3>
-<h4>What is this project ?</h4>
+<h4>What is this project?</h4>
 <p>Cminstaller is a simple script for installing CM on your Android device.</p>
 <h4>What are the requirements of this project?</h4>
 <ul>
@@ -29,7 +29,7 @@
 <ol>
 <li>Download all required files and your version of rootfornexus</li>
 <li>Place all files in a single folder</li>
-<li>Rename your recovery image as recovery.img, CyanogenMod (or any other rom) .zip file as cm.zip and Google Apps .zip file as gapps.zip (In Windows you may not need to put .zip or .img in the file name.)</li>
+<li>Rename your recovery image as recovery.img, CyanogenMod (or any other rom) .zip file as cm.zip and Google Apps .zip file as gapps.zip (In Windows you may not need to put .zip or .img in the file name)</li>
 <li>Launch the script</li>
 <li>Follow the instructions on screen</li>
 <li>Enjoy your new shiny ROM :)</li>
