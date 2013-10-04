@@ -11,7 +11,39 @@ echo in worst case brick!
 echo -
 echo Are you sure to flash CyanogenMod?
 pause
+goto :checkfiles
+
+:checkfiles
+if not exist adb.exe (
+	echo adb.exe is missing.
+	goto :missingfile
+)
+if not exist fastboot.exe (
+	echo fastboot.exe is missing.
+	goto :missingfile
+)
+if not exist AdbWinApi.dll (
+	echo AdbWinApi.dll is missing.
+	goto :missingfile
+)
+if not exist AdbWinUsbApi.dll (
+	echo AdbWinUsbApi.dll is missing.
+	goto :missingfile
+)
+if not exist cm.zip (
+	echo cm.zip is missing.
+	goto :missingfile
+)
+if not exist recovery.img (
+	echo recovery.img is missing.
+	goto :missingfile
+)
 goto :isunlocked
+
+:missingfile
+echo Please place it in the same directory with this file and continue.
+pause
+goto :checkfiles
 
 :isunlocked
 echo Is your devices bootloader unlocked?
@@ -50,7 +82,7 @@ echo Use volume buttons to select and confirm with power button.
 echo Continue when your device has been unlocked successfully.
 pause
 echo Check if the device has rebooted to android.
-echo If not reboot it manually by selecting "Reboot" in bootloader
+echo If not, reboot it manually by selecting "Reboot" in bootloader
 echo with volume keys and confirm with power button.
 echo Continue when the device has rebooted.
 pause
@@ -60,7 +92,6 @@ adb devices
 echo Continue if you see your device in list above.
 pause
 adb reboot bootloader
-pause
 echo Continue when your device is in Fastboot mode.
 pause
 fastboot devices
@@ -129,6 +160,12 @@ echo 2 -- NO
 set choix="Notset"
 set /p choix=Type 1 or 2: 
 if "%choix%"=="1" (
+	if not exist gapps.zip (
+		echo gapps.zip is missing.
+		echo Please place it in the same directory with this file and continue.
+		pause
+		goto :gappschoice
+	)
 	goto :flashgapps
 ) else if "%choix%"=="2" (
 	goto :finish
