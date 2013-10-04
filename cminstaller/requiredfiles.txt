@@ -5,6 +5,7 @@ Required
 -A CyanogenMod (or custom ROM) .zip file
 -cminstaller.bat (Windows) or cminstaller.sh (Linux)
 -A custom recovery .img file
+-Android tools
 
 =====================================
 Additional
