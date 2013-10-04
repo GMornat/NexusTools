@@ -2,13 +2,15 @@
 Required
 =====================================
 
--A CyanogenMod (or custom ROM) .zip file
--cminstaller.bat (Windows) or cminstaller.sh (Linux)
--A custom recovery .img file
--Android tools
+- A CyanogenMod (or any other custom ROM) .zip file
+- cminstaller.bat (For Windows) or cminstaller.sh (For Linux)
+- A custom recovery .img file
+- Android tools
+	- For Windows: adb.exe, fastboot.exe, AdbWinApi.dll and AdbWinUsbApi.dll
+	- For Linux: adb and fastboot
 
 =====================================
-Additional
+Optional
 =====================================
 
--Google Apps .zip file
+- Google Apps .zip file
