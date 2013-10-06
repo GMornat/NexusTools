@@ -38,7 +38,7 @@ if not exist recovery.img (
 	echo recovery.img is missing.
 	goto :missingfile
 )
-if not exist superuser.zip
+if not exist superuser.zip (
 	echo superuser.zip is missing.
 	goto :missingfile
 )
