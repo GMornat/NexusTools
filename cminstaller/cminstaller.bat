@@ -9,7 +9,7 @@ echo We are not responsible for dead kittens, any injuries or broken devices!
 echo Use this script only for Nexus devices. Other devices may not work or
 echo in worst case brick!
 echo -
-echo Are you sure to flash CyanogenMod?
+echo Are you sure to flash CyanogenMod (or Superuser) ?
 pause
 goto :checkfiles
 
@@ -38,8 +38,11 @@ if not exist recovery.img (
 	echo recovery.img is missing.
 	goto :missingfile
 )
-goto :isunlocked
-
+if not exist superuser.zip
+	echo superuser.zip is missing.
+	goto :missingfile
+)
+	
 :missingfile
 echo Please place it in the same directory with this file and continue.
 pause
@@ -143,6 +146,28 @@ goto :flash
 :flash
 echo Now booting to recovery
 fastboot boot recovery.img
+echo Only root your device , or install CyanogenMod ?
+echo 1 -- CyanogenMod (rooting included)
+echo 2 -- Rooting only
+set choix="Notset"
+set /p choix=Type 1 or 2: 
+if "%choix%"=="1" (
+	goto :flashcm
+) else if "%choix%"=="2" (
+	goto :superuser
+) else (
+	echo Invalid  choice. Type only 1 or 2.
+	goto :flash
+)
+
+:superuser
+echo You wanted to flash only Superuser. No problem :)
+echo You can still install CyanogenMod in the future !
+echo Turn on ADB sideload in your recovery and and continue the script
+pause
+adb sideload superuser.zip
+
+:flashcm
 echo With your recovery, wipe Data, Cache and Dalvik Cache (Under andvanced options) and then
 echo start the ADB sideload mode and continue.
 pause
