@@ -6,7 +6,6 @@ Required
 - cminstaller.bat (For Windows) or cminstaller.sh (For Linux)
 - A custom recovery .img file
 - Android tools
-	- For Windows: adb.exe, fastboot.exe, AdbWinApi.dll and AdbWinUsbApi.dll
 	- For Linux: adb and fastboot
 
 =====================================

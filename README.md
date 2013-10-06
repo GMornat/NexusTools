@@ -10,8 +10,7 @@
 <li>Fastboot</li>
 <li>ADB</li>
 <li>Drivers for Windows</li>
-<li><a target="_blank" href="http://bit.ly/toolsandroid">Download ADB & fastboot  for Windows only</a></li>
-<li><a target="_blank" href="http://developer.android.com/sdk/index.html#download">or download ADT Bundle for Windows/Linux/Mac</a>
+<li><a target="_blank" href="http://developer.android.com/sdk/index.html#download"> ADT Bundle (fastboot & ADB) for Linux/Mac</a></li>
 <ul>
 <li>Extract ADB and fastboot (and drivers for Windows) from platform tools directory.</li>
 </ul></li>
