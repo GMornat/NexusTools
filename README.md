@@ -4,7 +4,7 @@
 <h4>What are the requirements of this project?</h4>
 <ul>
 <li>A Nexus device</li>
-<li>A PC with either Linux (tested with Ubuntu 12.04 LTS) or Windows OS (Linux version under development)</li>
+<li>A PC with either Linux (tested with Ubuntu 12.04 LTS) or Windows</li>
 <li>Android tools:</li>
 <ul>
 <li>Fastboot</li>
@@ -28,9 +28,18 @@
 <h4>Instructions:</h4>
 <ol>
 <li>Download all required files and source code of cminstaller</li>
-<li>Place all files in a single folder</li>
+<li>Place all files in the same folder with cminstaller script</li>
 <li>Rename your recovery image as recovery.img, CyanogenMod (or any other rom) .zip file as cm.zip and Google Apps .zip file as gapps.zip (in Windows you may not need to put .zip or .img in the file name)</li>
 <li>Launch the script</li>
+<ul>
+<li>On Windows right-click on cminstaller.bat and select "Run as administrator"</li>
+<li>On Linux navigate in terminal to right folder and run "bash cminstaller.sh"</li>
+<ul>
+<li>On Ubuntu right-click on cminstaller.sh and select "Properties"</li>
+<li>Then check "Allow executing file as program" on Permissions tab</li>
+<li>Finally double-click on cminstaller.sh and select "Execute in terminal"</li>
+</ul>
+</ul>
 <li>Follow the instructions on screen</li>
 <li>Enjoy your new shiny ROM :)</li>
 </ol>
