@@ -166,6 +166,11 @@ echo You can still install CyanogenMod in the future !
 echo Turn on ADB sideload in your recovery and and continue the script
 pause
 adb sideload superuser.zip
+echo Cool your device is now rooted !
+Continue the script to reboot
+pause
+adb reboot
+goto :superuserend
 
 :flashcm
 echo With your recovery, wipe Data, Cache and Dalvik Cache (Under andvanced options) and then
@@ -213,6 +218,12 @@ echo Continue to reboot the device.
 pause
 adb reboot
 echo Enjoy your new shiny custom ROM!
+pause
+goto :exit
+
+:superuserend
+You didn't want to flash CyanogenMod , no problem , this is your choice :)
+You can re-use the script to install it in the future
 pause
 goto :exit
 
