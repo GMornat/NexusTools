@@ -1,6 +1,4 @@
 *~
-*.exe
-*.dll
 adb
 fastboot
 *.zip
