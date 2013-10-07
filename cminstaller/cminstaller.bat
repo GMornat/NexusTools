@@ -38,11 +38,7 @@ if not exist recovery.img (
 	echo recovery.img is missing.
 	goto :missingfile
 )
-if not exist superuser.zip (
-	echo superuser.zip is missing.
-	goto :missingfile
-)
-	
+
 :missingfile
 echo Please place it in the same directory with this file and continue.
 pause
