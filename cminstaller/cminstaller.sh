@@ -14,10 +14,52 @@ echo "This script needs root permissions. Please type in your password when prom
 echo " "
 echo "Are you sure to flash CyanogenMod?"
 read -p "Press enter to continue..." cont
-checkfiles
 }
 
-function checkfiles {
+function index {
+echo "Root only or CyanogenMod ?"
+echo "1 -- CyanogenMod (Root included)"
+echo "2 -- Rooting only"
+choix="Notset"
+echo -n "Type 1 or 2: "
+read choix
+if [ $choix == "1" ]
+then
+	checkfilescm
+elif [ $choix == "2" ]
+then
+	rootfiles
+else
+	echo "Invalid  choice. Type only 1 or 2."
+	index
+fi
+}
+
+function rootfiles {
+if [ ! -f adb ]
+then
+	echo "adb is missing."
+	missingfile
+fi
+if [ ! -f fastboot ]
+then
+	echo "fastboot is missing."
+	missingfile
+fi
+if [ ! -f superuser.zip ]
+then
+	echo "superuser.zip is missing."
+	missingfile
+fi
+if [ ! -f recovery.img ]
+then
+	echo "recovery.img is missing."
+	missingfile
+fi
+isunlocked
+}
+
+function checkfilescm {
 if [ ! -f adb ]
 then
 	echo "adb is missing."
@@ -44,7 +86,7 @@ isunlocked
 function missingfile {
 echo "Please place it in the same directory with this file and continue."
 read -p "Press enter to continue..." cont
-checkfiles
+index
 }
 
 function isunlocked {
