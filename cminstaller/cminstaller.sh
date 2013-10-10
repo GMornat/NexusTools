@@ -1,7 +1,6 @@
 #!/bin/bash
 
 function start {
-echo "--------------EXPERIMENTAL SCRIPT FOR LINUX, MIGHT NOT WORK---------------"
 echo "--------------------------------------------------------------------------"
 echo "-                               cminstaller                              -"
 echo "--------------------------------------------------------------------------"
@@ -14,10 +13,11 @@ echo "This script needs root permissions. Please type in your password when prom
 echo " "
 echo "Are you sure to flash CyanogenMod?"
 read -p "Press enter to continue..." cont
+index
 }
 
 function index {
-echo "Root only or CyanogenMod ?"
+echo "Root only or flash CyanogenMod ?"
 echo "1 -- CyanogenMod (Root included)"
 echo "2 -- Rooting only"
 choix="Notset"
@@ -203,7 +203,7 @@ choice
 }
 
 function choice {
-echo "Root only or CyanogenMod ?"
+echo "Root only or flash CyanogenMod?"
 echo "1 -- CyanogenMod (Root included)"
 echo "2 -- Rooting only"
 choix="Notset"
@@ -222,14 +222,16 @@ fi
 }
 
 function rooting {
-echo So you don't want to flash CyanogenMod ? No problem , this is your choice ;)
+echo "So you don't want to flash CyanogenMod ? No problem, this is your choice ;)"
 read -p "Press enter to continue..." cont
 sudo ./adb devices
 echo "Continue if you see your device listed above."
 read -p "Press enter to continue..." cont
 sudo ./adb sideload superuser.zip
-echo Cool ! Now your device is rooted :)
-echo You can re-use the script for re-installing CyanogenMod
+echo "Continue when superuser.zip has been flashed successfully"
+read -p "Press enter to continue..." cont
+echo "Cool ! Now your device is rooted :)"
+echo "You can use this script later for installing CyanogenMod"
 read -p "Press enter to continue..." cont
 sudo ./adb reboot
 exit
@@ -243,6 +245,8 @@ echo "Continue if you see your device listed above."
 read -p "Press enter to continue..." cont
 echo "Flashing cm.zip"
 sudo ./adb sideload cm.zip
+echo "Continue when cm.zip has been flashed successfully"
+read -p "Press enter to continue..." cont
 gappschoice
 }
 
@@ -277,6 +281,8 @@ echo "If You got out of ADB sideload mode after the first zip flashed successful
 read -p "Press enter to continue..." cont
 echo "Flashing gapps.zip"
 sudo ./adb sideload gapps.zip
+echo "Continue when gapps.zip has been flashed successfully"
+read -p "Press enter to continue..." cont
 finish
 }
 
