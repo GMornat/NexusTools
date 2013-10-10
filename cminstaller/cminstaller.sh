@@ -186,6 +186,12 @@ sudo ./adb devices
 echo "Continue if you see your device listed above."
 read -p "Press enter to continue..." cont
 sudo ./adb sideload superuser.zip
+echo Cool ! Now your device is rooted :)
+echo You can re-use the script for re-installing CyanogenMod
+read -p "Press enter to continue..." cont
+sudo ./adb reboot
+exit
+}
 
 function cyanogen {
 echo "With your recovery, wipe Data, Cache and Dalvik Cache (Under andvanced options) and then start the ADB sideload mode and continue."
