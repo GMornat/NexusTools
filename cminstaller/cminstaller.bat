@@ -11,9 +11,22 @@ echo in worst case brick!
 echo -
 echo Are you sure to flash CyanogenMod (or Superuser) ?
 pause
-goto :checkfiles
+:choiceall
+echo Rooting or CyanogenMod ?
+echo 1 -- CyanogenMod (root included)
+echo 2 -- Rooting only
+set choix="Notset"
+set /p choix=Type 1 or 2: 
+if "%choix%"=="1" (
+	goto :checkfilescm
+) else if "%choix%"=="2" (
+	goto :rootfiles
+) else (
+	echo Invalid  choice. Type only 1 or 2.
+	goto :choiceall
+)
 
-:checkfiles
+:checkfilescm
 if not exist adb.exe (
 	echo adb.exe is missing.
 	goto :missingfile
@@ -38,6 +51,34 @@ if not exist recovery.img (
 	echo recovery.img is missing.
 	goto :missingfile
 )
+goto :isunlocked
+
+:rootfiles
+if not exist adb.exe (
+	echo adb.exe is missing.
+	goto :missingfile
+)
+if not exist fastboot.exe (
+	echo fastboot.exe is missing.
+	goto :missingfile
+)
+if not exist AdbWinApi.dll (
+	echo AdbWinApi.dll is missing.
+	goto :missingfile
+)
+if not exist AdbWinUsbApi.dll (
+	echo AdbWinUsbApi.dll is missing.
+	goto :missingfile
+)
+if not exist superuser.zip (
+	echo superuser.zip is missing.
+	goto :missingfile
+)
+if not exist recovery.img (
+	echo recovery.img is missing.
+	goto :missingfile
+)
+goto :isunlocked
 
 :missingfile
 echo Please place it in the same directory with this file and continue.
