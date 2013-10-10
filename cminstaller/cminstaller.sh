@@ -157,6 +157,37 @@ flash
 function flash {
 echo "Now booting to recovery"
 sudo ./fastboot boot recovery.img
+choice
+}
+
+function choice {
+echo "Root only or CyanogenMod ?"
+echo "1 -- CyanogenMod (Root included)"
+echo "2 -- Rooting only"
+choix="Notset"
+echo -n "Type 1 or 2: "
+read choix
+if [ $choix == "1" ]
+then
+	cyanogen
+elif [ $choix == "2" ]
+then
+	rooting
+else
+	echo "Invalid  choice. Type only 1 or 2."
+	choice
+fi
+}
+
+function rooting {
+echo So you don't want to flash CyanogenMod ? No problem , this is your choice ;)
+read -p "Press enter to continue..." cont
+sudo ./adb devices
+echo "Continue if you see your device listed above."
+read -p "Press enter to continue..." cont
+sudo ./adb sideload superuser.zip
+
+function cyanogen {
 echo "With your recovery, wipe Data, Cache and Dalvik Cache (Under andvanced options) and then start the ADB sideload mode and continue."
 read -p "Press enter to continue..." cont
 sudo ./adb devices
