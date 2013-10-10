@@ -203,7 +203,7 @@ choice
 }
 
 function choice {
-echo "Root only or install CyanogenMod?"
+echo "Root only or flash CyanogenMod?"
 echo "1 -- CyanogenMod (Root included)"
 echo "2 -- Rooting only"
 choix="Notset"
