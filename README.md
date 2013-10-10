@@ -15,13 +15,17 @@
 <li>Extract ADB and fastboot (and drivers for Windows) from platform tools directory.</li>
 </ul></li>
 </ul></li>
-<li>A custom recovery (like <a target="_blank" href="http://clockworkmod.com/rommanager">CWM</a>)</li>
-<li><a target="_blank" href="http://get.cm/">Download CyanogenMod</a></li>
-<li>(Optional) <a target="_blank" href="http://goo.im/gapps">Download Google Apps</a>
 <ul>
+<li>A custom recovery (like <a target="_blank" href="http://clockworkmod.com/rommanager">CWM</a>)</li>
+<li><a target="_blank" href="http://get.cm/">CyanogenMod file</a></li>
+</ul>
 <li><b>Select the right version corresponding to your CyanogenMod version!</b></li>
 <li><b>Do not extract these .zip files!</b></li>
 <li>All custom ROMs don't need Google Apps since they are already included in the ROM.</li>
+<ul>
+<li><a target="_blank" href="http://goo.im/gapps">Google Apps (Optionnal)</a>
+<li>Only want to root your device ? Download <a target="_blank" href="http://download.clockworkmod.com/superuser/superuser.zip">superuser.zip</a> only :)</li>
+<ul>
 </ul></li>
 </ul>
 <h4>Instructions:</h4>
