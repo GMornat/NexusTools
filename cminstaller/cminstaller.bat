@@ -259,8 +259,8 @@ pause
 goto :exit
 
 :superuserend
-You didn't want to flash CyanogenMod , no problem , this is your choice :)
-You can re-use the script to install it in the future
+echo You didn't want to flash CyanogenMod , no problem , this is your choice :)
+echo You can re-use the script to install it in the future
 pause
 goto :exit
 
