@@ -1,6 +1,6 @@
-<h3>CyanogenMod installer for Windows and Linux</h3>
+<h3>Nexus toolkit for Windows and Linux</h3>
 <h4>What is this project?</h4>
-<p>cminstaller is a simple script for installing CyanogenMod or almost any other custom ROM on your Google Nexus device.</p>
+<p>cminstaller is a simple script for installing CyanogenMod or almost any other custom ROM on your Google Nexus device. Or simply root your phone !</p>
 <h4>What do you need to use cminstaller ?</h4>
 <ul>
 <li>A Nexus device, really ! ANY NEXUS ! (S/GNEX/7/10/5/6 and all genereations and variants)</li>
@@ -9,7 +9,7 @@
 </ul>
 <ul>
 <li>A custom recovery (like <a target="_blank" href="http://clockworkmod.com/rommanager">CWM</a>)</li>
-<li><a target="_blank" href="http://get.cm/">CyanogenMod file</a></li>
+<li><a target="_blank" href="http://get.cm/">CyanogenMod file if you want it</a></li>
 </ul>
 <li><b>Select the right version corresponding to your CyanogenMod version!</b></li>
 <li><b>Do not extract these .zip files!</b></li>
