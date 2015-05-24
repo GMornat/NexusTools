@@ -2,7 +2,7 @@
 
 function start {
 echo "--------------------------------------------------------------------------"
-echo "-                               cminstaller                              -"
+echo "-                               NexusTools                               -"
 echo "--------------------------------------------------------------------------"
 echo " "
 echo "NOTE: Use this script at your own risk!"
